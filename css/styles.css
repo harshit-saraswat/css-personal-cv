@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    margin: 0 auto 0 auto;
+    width: 40%;
+    top: 80px;
+    font-family: 'Sacramento', cursive;
+}
+
+p{
+    margin: 0 auto 0 auto;
+    width: 40%;
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-container{
+    background-color: #e4f9ff;
+    margin: 0px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 300px;
+    bottom: 350px;
+}
+
+.mountains{
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition:opacity 0.5s ease-in-out; 
+    opacity: 1;
+    width: 50%;
+    margin-top: 100px;   
+}
+.mountains:hover{
+    opacity: 0.9;
+}
+
+.software{
+    text-decoration: underline;
+}
