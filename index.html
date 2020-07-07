@@ -12,9 +12,22 @@
     <title>Harshit's Spot</title>
 </head>
 
-<body>
+<body id="main">
+    <!-- Side Nav Bar -->
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Extras</a>
+        <a href="#">Experience</a>
+        <a href="#">Education</a>
+        <a href="#contact-me">Contact</a>
+    </div>
+
+    
     <!-- Top Container -->
     <div class="top-container">
+        <!-- Side Nav Button -->
+        <span class="sideNavButton" onclick="openNav()">&#9776;</span>
+
         <img class="top-cloud" src="images/cloud.png" alt="cloud">
         <h1>I'm Harshit</h1>
         <h2 class="sub-title">a <span class="software">software</span> engineer.</h2>
@@ -25,11 +38,12 @@
     </div>
 
     <!-- Middle Container -->
-    <div class="middle-container">
+    <div id="midcontainer" class="middle-container">
         <div class="profile">
             <img class="profile-img" src="images/harshit.png" alt="harshit-profile-pic">
             <h2>Hello.</h2>
-            <p class="intro">Full Stack AI Engineer | Machine Learner | AI Enthusiast | Android Application Developer | Dreamer</p>
+            <p class="intro">Full Stack AI Engineer | Machine Learner | AI Enthusiast | Android Application Developer |
+                Dreamer</p>
         </div>
         <hr>
         <div class="skills">
@@ -38,7 +52,8 @@
                 <img class="ai-img" src="icons/machine-learning.svg" alt="ml-image">
                 <h3>Artificial Intelligence</h3>
                 <p>I've always been a big fan of Iron Man. He's been a great inspiration for me to get into AI. Over the
-                    years I've learned and worked on the neccessary skills to be called as an AI Engineer. My favorite? Computer Vision.</p>
+                    years I've learned and worked on the neccessary skills to be called as an AI Engineer. My favorite?
+                    Computer Vision.</p>
             </div>
             <div class="skill-row">
                 <img class="android-img" src="icons/android.svg" alt="android-image">
@@ -55,10 +70,11 @@
             </div>
         </div>
         <hr>
-        <div class="contact-me">
+        <div class="contact-me" id="contact-me">
             <h2>Get In Touch</h2>
             <h3>Well, if you love to code as much as I do, let's connect!</h3>
-            <p class="contact-message">Ofcourse, not just coding, I like to binge watch tv shows or anime or movies, love EDM and also a big
+            <p class="contact-message">Ofcourse, not just coding, I like to binge watch tv shows or anime or movies,
+                love EDM and also a big
                 foodie. And a lot many more things, just ask it out!</p>
             <a class="btn" href="mailto:contactharshitsaraswat@gmail.com">CONTACT ME</a>
         </div>
@@ -71,6 +87,28 @@
         <a class="footer-link" href="https://harshit-saraswat.github.io/html-personal-cv/">Portfolio</a>
         <p class="copyright">© 2020 Harshit Saraswat.</p>
     </div>
+
+    <!-- Scripts -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+    <script>
+        var navBool=false;
+        // $('middle-container').click(function(e){
+        //     closeNav();
+        // });
+
+        document.getElementById('midcontainer').addEventListener('click', closeNav);
+
+        function openNav() {
+            navBool=true;
+            document.getElementById("sideNav").style.width = "250px";
+        };
+
+        function closeNav() {
+            navBool=false;
+            document.getElementById("sideNav").style.width = "0";
+        };
+    </script>
 
 </body>
 
