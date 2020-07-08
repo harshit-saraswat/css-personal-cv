@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins&family=Sacramento&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/experience-styles.css">
+    <title>Education</title>
+</head>
+<body>
+    <!-- Side Nav Bar -->
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#">Extras</a>
+        <a href="experience.html">Experience</a>
+        <a href="#">Education</a>
+        <a href="index.html#contact-me">Contact</a>
+    </div>
+
+     <!-- Side Nav Button -->
+     <span class="sideNavButton" onclick="openNav()">&#9776;</span>
+
+    <h1>My Education</h1>
+
+    <div class="experience-container">
+        <!-- B.Tech -->
+        <div class="workplace">
+            <a href="http://sysquoinnovation.com/"><img class="company-logo" id="sysquo" src="images/sysquo-logo.png"
+                    alt="sysquo-logo"></a>
+            <h3 class="job-profile">Full Stack AI Developer</h3>
+            <h4 class="time-period">January, 2020 - Present</h4>
+            <p class="info">Currently working as a Full Stack AI Developer for Android and Web Applications. Worked on
+                projects related to Computer Vision, Chatbots, Data Analytics and Machine Learning Domain and deployed
+                them on mobile apps using APIs.</p>
+        </div>
+        <hr>
+        <!-- 12th -->
+        <div class="workplace">
+            <a href="https://www.radixinfosolutions.com/"><img class="company-logo" id="radix"
+                    src="images/radix-logo.png" alt="radix-logo"></a>
+            <h3 class="job-profile">ML and Data Science Industrial Intern</h3>
+            <h4 class="time-period">June, 2018 - August, 2018</h4>
+            <p class="info">Learned and worked on various technologies in the domain like Machine Learning, Deep
+                Learning, Data Analytics, Computer Vision, NLP, etc.</p>
+        </div>
+        <hr>
+        <!-- 10th -->
+        <div class="workplace">
+            <a href="https://www.sulabhinternational.org/"><img class="company-logo" id="sulabh"
+                    src="images/sulabh-logo.png" alt="sulabh-logo"></a>
+            <h3 class="job-profile">NGO Intern</h3>
+            <h4 class="time-period">June, 2018 - July, 2018</h4>
+            <p class="info">Worked at this reputed NGO to show my gratitude towards the society to communicate with
+                people and understand their daily life problems.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/harshit-saraswat/">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/harshit-saraswat">GitHub</a>
+        <a class="footer-link" href="https://harshit-saraswat.github.io/html-personal-cv/">Portfolio</a>
+        <p class="copyright">© 2020 Harshit Saraswat.</p>
+    </div>
+
+    <script>
+        function openNav() {
+            navBool=true;
+            document.getElementById("sideNav").style.width = "250px";
+        };
+
+        function closeNav() {
+            navBool=false;
+            document.getElementById("sideNav").style.width = "0";
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body{
+    background-color: #e4f9ff;
+    text-align: center;
+}
+
+h1{
+    width: 80%;
+}
+
+h3{
+    margin: 0 0;
+}
+
+h4{
+    color: #11999e;
+    margin: 0 0;
+}
+
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.experience-container{
+    margin: 50px auto;
+    position: relative;
+    padding: 10px;
+    width: 60%;
+}
+
+.workplace{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.company-logo{
+    cursor: pointer;
+}
+
+.company-logo:hover{
+    transition: 0.5s ease;
+    opacity: 0.5;
+}
+
+#sysquo{
+    width: 180px;
+    background-color: #4e403f09;
+}
+
+#radix{
+    width: 200px;
+}
+
+#sulabh{
+    height: 100px;
+}
