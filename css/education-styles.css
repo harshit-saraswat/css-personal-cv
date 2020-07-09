@@ -42,6 +42,7 @@ p{
     position: absolute;
     height: 100%;
     width: 100%;
+    text-align: center;
     border-radius: 10px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -66,7 +67,40 @@ p{
 }
 
 .back-content{
-    margin-top:2%;
-    margin-bottom:3%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     padding:10px;
+}
+
+.duration{
+    font-weight: bold;
+}
+
+.sub-heading{
+    font-size: 4.6rem;
+}
+
+.course-medium{
+    display: inline-block;
+}
+
+.vr{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 200px;
+    border-left: solid 2px #204051;
+}
+
+@media screen and (max-width: 1028px){
+    .vr{
+        display: none;
+    }
+    .course-medium{
+        display: block;
+    }
 }
