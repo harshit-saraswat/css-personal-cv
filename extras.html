@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins&family=Sacramento&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/experience-styles.css">
+    <link rel="stylesheet" href="css/education-styles.css">
+    <link rel="stylesheet" href="css/extras-styles.css">
+    <title>Extras and Skillset</title>
+</head>
+<body>
+    <!-- Side Nav Bar -->
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#">Extras</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="index.html#contact-me">Contact</a>
+    </div>
+
+    <!-- Side Nav Button -->
+    <span class="sideNavButton" onclick="openNav()">&#9776;</span>
+
+    <h1>Technological Skills and Extras</h1>
+
+    <div class="experience-container">
+        <!-- Technological Skills -->
+        <div class="technological-skills">
+            <img class="tech-img" src="images/tech.png" alt="tech-images">
+        </div>
+
+        <hr>
+
+        <!-- Domain Knowledge -->
+        <div class="domain-knowledge">
+            <h1 class="sub-heading">Domain Knowledge</h1>
+            <div class="topic">
+                <h2>Programming Concepts</h2>
+                <div class="badge"><p>OOPS</p></div>
+            </div>
+            <div class="topic">
+                <h2>Development Exposure</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/harshit-saraswat/">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/harshit-saraswat">GitHub</a>
+        <a class="footer-link" href="https://harshit-saraswat.github.io/html-personal-cv/">Portfolio</a>
+        <p class="copyright">© 2020 Harshit Saraswat.</p>
+    </div>
+
+    <script>
+        function openNav() {
+            navBool = true;
+            document.getElementById("sideNav").style.width = "250px";
+        };
+
+        function closeNav() {
+            navBool = false;
+            document.getElementById("sideNav").style.width = "0";
+        };
+    </script>
+</body>
+</html>
