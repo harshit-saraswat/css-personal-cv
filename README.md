@@ -1,8 +1,8 @@
 # css-personal-cv
-This is my second project for web development course.
+This is my second project for web development course. The project is based on Angela Yu's Complete Web Development Course's 2nd project CSS Personal Site. I've added more pages and some more components using HTML-CSS-JS inorder to add more details about me.
 
 ## Live Link:
-Coming Soon... 
+[Harshit's Spot CSS](https://harshit-saraswat.github.io/css-personal-cv/)
 
 ## Deployment:
 This project is currently deployed using Github Pages.
